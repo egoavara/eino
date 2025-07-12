@@ -80,7 +80,7 @@ var toolInfo = &schema.ToolInfo{
 						Type:        &openapi3.Types{openapi3.TypeObject},
 						Description: "the job of the user",
 						Required:    []string{"company"},
-						// Nullable:    true,
+						Nullable:    true,
 						Properties: openapi3.Schemas{
 							"company": {
 								Value: &openapi3.Schema{
@@ -113,7 +113,7 @@ var toolInfo = &schema.ToolInfo{
 								Type:        &openapi3.Types{openapi3.TypeObject},
 								Required:    []string{"amount", "has_pay_tax", "source"},
 								Description: "the incomes of the user",
-								// Nullable:    true,
+								Nullable:    true,
 								Properties: openapi3.Schemas{
 									"source": {
 										Value: &openapi3.Schema{
@@ -138,7 +138,7 @@ var toolInfo = &schema.ToolInfo{
 											Type:        &openapi3.Types{openapi3.TypeObject},
 											Description: "the job of the user when earning this income",
 											Required:    []string{"company"},
-											// Nullable:    true,
+											Nullable:    true,
 											Properties: openapi3.Schemas{
 												"company": {
 													Value: &openapi3.Schema{
